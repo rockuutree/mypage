@@ -8,6 +8,12 @@ body {
   overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'HCo Gotham', sans-serif;
+}
+
+/* Nav Bar */
+
 nav {
   display: flex;
   background-color: #9a8c98;
@@ -40,6 +46,8 @@ nav .logo {
   font-weight: bold;
 }
 
+/* Card Stuff */
+
 .quiz {
   background: #37de8f;
   border-radius: 2em;
@@ -65,6 +73,7 @@ nav .logo {
   flex-direction: column;
   align-items: center;
   margin-right: -27em;
+  padding: 1rem;
 }
 
 .left-container,
@@ -98,11 +107,6 @@ nav .logo {
 
 .card p {
   font-size: 20px;
-}
-
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'HCo Gotham', sans-serif;
 }
 
 .container .card .left-container .image-content .overlay {
@@ -144,10 +148,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .left-container #rack {
-  padding: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
   height: auto; /* Maintain aspect ratio */
 }
 
+/* Footer */
 footer {
   background-color: #9a8c98;
   color: #faf9f6;
@@ -191,7 +197,7 @@ footer {
   .card {
     flex-direction: row;
     display: flex;
-    padding: 3rem;
+    padding: 2.5rem;
   }
   
   .card p {
@@ -206,7 +212,7 @@ footer {
   }
 
   .left-container,
-.right-container {
+  .right-container {
   padding: 2rem 1rem;
 }
 
@@ -267,6 +273,10 @@ footer {
 
   .left-container .text-content {
     padding-left: 1em;
+  }
+
+  .card {
+    padding: 4rem;
   }
 }
 
