@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="author" content="Ryan Vu, Carlos A. Carrillo-Sandoval, Cleo Reyes, Thien Tran" />
-    <meta name="description" content="INFO 340 Project proposal" />
+    <meta name="description" content="INFO 340 Project Draft" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Fonts Used -->
     <!-- Headings Font -->
@@ -15,6 +15,8 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
     <title>styleU</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/mapleMeFace.png" />
 </head>
 <body>
     <nav>
@@ -27,7 +29,7 @@
             <a href="">Styles</a>
             <a href="">Palletes</a>
         </div>
-        <div id="hamburger-menu">
+        <div class="hamburger-menu" aria-label="Toggle Menu">
             <a href="#"><span class="material-symbols-outlined">menu</span></a>
         </div>
     </nav>
@@ -37,13 +39,14 @@
       <div class="card mb-4">
         <div class="left-container">
           <div class="text-content">
+          <h1>Pallette Quiz</h1>
           <p>Picking the correct color pallette for your personal features is essential for your personal style. Figure out what compliments you the most and take this quiz!</p>
-            <button class="quiz">Pallette Quiz</button>
+            <button class="quiz"  aria-label="Toggle Palette">Pallette Quiz</button>
         </div>
         </div>
         <div class="right-container">
           <div class="image-content">
-          <img id="tech" src="images/tech.jpeg" alt="color pallete fabrics" class="pb-3 text-center" />
+          <img src="images/tech.jpeg" alt="color pallete fabrics" class="tech pb-3 text-center" />
         </div>
         </div>
       </div>
@@ -51,26 +54,27 @@
     <div class="card mb-4">
               <div class="left-container">
                 <div class="image-content">
-                    <img id="rack" src="images/hoodie.png" alt="clothing on a rack with a pink backdrop" class="pb-3" />
-                    <div class="overlay overlay-1 aos-init" data-aos="fade-left">
+                    <img id="rack" src="images/hoodie.png" alt="clothing on a rack with a pink backdrop" class="rack pb-3" />
+                    <div class="overlay overlay-1 aos-init" data-aos="fade-left" aria-label="Successful Overlay">
                       <p class="title">3m<span></span>+</p>
                       <span class="sub-title">Successful queries</span>
                     </div>
-                    <div class="overlay overlay-2 aos-init" data-aos="fade-right">
+                    <div class="overlay overlay-2 aos-init" data-aos="fade-right" aria-label="Supported Overlay">
                         <p class="title">250<span>+</span></p>
                         <span class="sub-title">Supported users</span>
                     </div>
                     <!-- <div class="overlay overlay-3 aos-init" data-aos="fade-left">
-                      <p class="title">$500m<span></span></p>
-                      <span class="sub-title">Total spend</span>
+                      <p class="title">???<span></span></p>
+                      <span class="sub-title">???</span>
                   </div> -->
                   </div>
                 </div>
                 <div class="right-container">
                   <div class="text-content">
+                    <h2>Style Quiz</h2>
                     <p>Don't be buying pieces that don't fit your vibe. Figure out what you like with this quiz!</p>
                   <div class="text-center">
-                    <button class="quiz">Style Quiz</button>
+                    <button class="quiz" aria-label="Toggle Style">Style Quiz</button>
                   </div>
                   </div>
               </div>
@@ -78,13 +82,12 @@
                 <!-- Card 3 -->
                 <div class="card mb-4">
                   <div class="bottom">
-                    <h2>Want to Explore and Experiment?</h2>
-                    <button id="explore">Color Palletes</button>
-                    <button id="explore">Style Closet</button>
+                    <h3>Want to Explore and Experiment?</h3>
+                    <button class="explore" aria-label="Toggle Color">Color Palletes</button>
+                    <button class="explore" aria-label="Toggle Style Closet">Style Closet</button>
                   </div>
                 </div>
             </div>
-        </div>
     </main>
 
     <footer>
